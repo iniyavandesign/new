@@ -1,5 +1,5 @@
 @font-face{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', 'Helvetica', 'sans-serif';
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     src: local();
 }
@@ -84,18 +84,21 @@
     cursor: pointer;
 }
 
+
+.card{
+    overflow: hidden;
+}
+
 .card-img-top{
-    transition: transform 0.4s ease-in-out;
+    transition: transform .5s ease;
+
 }
 
 .card-img-top:hover{
-    z-index: 1;
+    border-radius: 0;
     transform: scale(1.1);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-color: white;
-    border: 1rem;
     
-}
+} 
 
 .about{
     font-size: 80px;
@@ -103,4 +106,9 @@
 
 .box_align{
     margin-top: 15vh;
+}
+
+.icon-black{
+    color: #000;
+    text-decoration: none;
 }
